@@ -19,31 +19,108 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#mywork">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#mywork">Projects</a></li>
+                    <li><a href="#contactme">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <div id="home">
-                <h1>Home</h1>
+                <h1>Hello, my name is <span id="name">Huong</span>.</h1>
+                <p>I am an enthusiastic learner, driven by curiosity and a passion for growth.</p>
             </div>
 
             <div class="about" id="aboutme">
                 <h1>About Me</h1>
+                <p>
+                    My name is Huong Vo. I'm currently a graduate student in Baton Rouge, Louisiana. 
+                    I recently started my web development learning journey with G{Code} House. 
+                    I have been learning HTML and CSS and working with different online web-creating tools via individual assignments and group work. 
+                    I'm learning Javascript to be able to add versatile flavors to my future projects. 
+                    My short-term goal is to keep updating this professional portfolio and build a website for a non-profit organization with my team using the knowledge I obtain throughout this journey. 
+                    The ability of bringing theory into real life products drives my excitement for programming and develop a desire to take on new challenges.
+                    <br>
+                    <br>
+                    Besides my daily tasks, I spend my spare time exploring CSS features via practice on this website. 
+                    Also, I enjoy weightlifting and hanging out with my friends as well as sketching.
+                </p>
+                <div>
+                    <img src="idw-f24-huongvo1.jpg" alt="my picture"/>
+                </div>
             </div>
 
             <div class="work" id="mywork">
                 <h1>My Work</h1>
-                <a href="https://github.com/huong-vo">Github</a>
-                <a href="https://www.linkedin.com/in/huong-vo/">LinkedIn</a>
+                <div class="projects">
+                    <div id="project1">
+                        <div>
+                            Project 1 goes here.
+                        </div>
+                        
+                        <div>
+                            Project 1 thumbnail goes here.
+                        </div>
+                    </div>
+
+                    <div id="project2">
+                        <div>
+                            Project 2 goes here.
+                        </div>
+
+                        <div>
+                            Project 1 thumbnail goes here.
+                        </div>
+                    </div>
+
+                    <div id="project3">
+                        <div>
+                            Project 3 goes here.
+                        </div>
+
+                        <div>
+                            Project 1 thumbnail goes here.
+                        </div>
+                    </div>
+                </div>
+                <ul class="contact-logo">
+                    <li><a href="https://github.com/huong-vo"><img  src="github-mark-c791e9551fe4/github-mark/github-mark.png" alt="github logo" target="_blank"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/huong-vo/"><img  src="LinkedIn-Logos/LinkedIn-Logos/LI-In-Bug.png" alt="linkedin logo" target="_blank"></a></li>
+                </ul>
             </div>
 
             <div class="contact" id="contactme">
-                <h1>Contact</h1>
+                <h1>Contact Me</h1>
+                <p>
+                    If you have any question or want to chat about a project, please leave a message below. 
+                    <br>
+                    I aim to get back to you within 2 days. I'm looking forward to hearing from you!
+                </p>
+                <form action="index.html" method="POST">
+                    <label for="name">
+                        Your name:
+                    </label>
+                    <input type="text"  id="name" name="name" value required>
+                    
+                    <label for="email">
+                        Your email:
+                    </label>
+                    <input type="text"  id="email" name="email" value required>
+                    
+                    <label for="message">
+                        Your message:
+                    </label>
+                    
+                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+
+                    <input id="send-message" type="submit" value="Send email">
+                </form>
             </div>
+
+            <footer>
+                <p>&#169 2024 Huong Vo. All Rights Reserved.</p>
+            </footer>
         </main>
     </body>
 </html>

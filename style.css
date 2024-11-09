@@ -1,29 +1,205 @@
 * {
-    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+:root {
+    --main-font-family: Garamond;
+    --font-size-h1: 3em;
+}
+
+body {
+    font-family: var(--main-font-family, initial);
+}
+
+main {
+    border: 1px solid black;
+    padding: 0 7%;
+}
+
+nav {
+    /* border: 2px solid green; */
+    background-color: pink;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* position: sticky; */
+    /* top: 0; */
 }
 
 nav ul {
-    border: 2px solid black;
-    padding: 10px;
+    padding: 0;
+    margin-right: 20px;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    /* border: 1px solid red; */
+    top: 0;
 }
 
 nav li {
+    padding: 15px;
+    /* border: 1px solid blue; */
+}
+
+nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orangered;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
     text-align: center;
-    flex: 1;
-    border: 1px solid;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#name {
+    color: 
 }
 
 .about {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 30%); 
+    grid-template-rows: 1fr auto;
+    column-gap: 7%;
+}
 
+.about h1 {
+    grid-area: 1/1/2/3;
+    /* border: 2px solid green; */
+}
+
+.about p {
+    grid-area: 2/1/3/2;
+}
+
+.about div {
+    grid-area: 2/2/3/3;
+    /* border: 2px solid orange; */
+}
+
+.about img {
+    /* object-fit: cover; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .work {
 
 }
 
-.contact {
-    
+.work ul {
+    /* border: 2px solid blue; */
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 0.7em;;
+}
+
+#project1,
+#project2,
+#project3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#project1 {
+    /* border: 2px solid gray; */
+    grid-area: 1/1/2/3;
+}
+
+#project2 {
+    /* border: 2px solid blue; */
+    grid-area: 2/1/3/3;
+}
+
+#project3 {
+    /* border: 2px solid yellowgreen; */
+    grid-area: 3/1/4/3;
+}
+
+.contact-logo li {
+    /* border: 2px solid green; */
+    margin: 0 10px;
+    /* position: relative; */
+}
+
+.contact-logo img{
+    /* border: 2px solid red; */
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: grayscale(1);
+    /* display: block; */
+}
+
+.contact{
+    /* display: block; */
+    /* border: 2px solid red; */
+}
+
+.contact p {
+    /* border: 2px solid blue; */
+    display: block;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    row-gap: 0.3em;
+    margin: 0 25%;
+    /* border: 2px solid; */
+}
+
+.contact label, 
+.contact input,
+.contact textarea {
+    width: 100%;
+    /* max-width: 50%; */
+}
+
+.contact label {
+    font-weight: 600;
+}
+
+.contact #send-message {
+    width: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/* @media screen and (max-width: ) {
+    .aboutme {
+        
+    }
+
+    .mywork ul {
+        flow-wrap: wrap;
+    }
+} */
